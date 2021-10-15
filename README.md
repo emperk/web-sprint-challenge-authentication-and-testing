@@ -17,11 +17,11 @@ You are not allowed to collaborate during the sprint challenge.
 
 Dad jokes are all the rage these days! In this challenge, you will build a real wise-guy application.
 
-Users must be able to call the `[POST] /api/auth/register` endpoint to create a new account, and the `[POST] /api/auth/login` endpoint to get a token.
+- [] Users must be able to call the `[POST] /api/auth/register` endpoint to create a new account, and the `[POST] /api/auth/login` endpoint to get a token.
 
-We also need to make sure nobody without the token can call `[GET] /api/jokes` and gain access to our dad jokes.
+- [] We also need to make sure nobody without the token can call `[GET] /api/jokes` and gain access to our dad jokes.
 
-We will hash the user's password using `bcryptjs`, and use JSON Web Tokens and the `jsonwebtoken` library.
+- [] We will hash the user's password using `bcryptjs`, and use JSON Web Tokens and the `jsonwebtoken` library.
 
 ### MVP
 
@@ -53,6 +53,10 @@ Your finished project must include all of the following requirements (further in
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics.
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
+  ANSWER: Tokens are stored on the client side while sessions use server memory.
 2. What does `bcryptjs` do to help us store passwords in a secure manner?
+  ANSWER: `bcryptjs` allows us to build password security that always hashes every password.
 3. How are unit tests different from integration and end-to-end testing?
+  ANSWER: Integration testing test how external systems are working with the internal modules individually. End-to-end testing tests the user experience from start to finish.
 4. How does _Test Driven Development_ change the way we write applications and tests?
+  ANSWER: It helps the developer focus on the app's requirements before writing code.
